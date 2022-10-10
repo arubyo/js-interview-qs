@@ -1,0 +1,15 @@
+{
+  "name": "arrays-prac",
+  "version": "1.0.0",
+  "description": "practice javascript problems from grasshopper",
+  "main": "arrays.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "random-words": "^1.2.0"
+  }
+}
