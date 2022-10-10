@@ -1,4 +1,6 @@
-this is a javascript problem set an old google interview challenge
+this is a javascript problem from an old google interview challenge - task description as below.
+
+i followed this challenge on the <a href="https://grasshopper.app/">grasshopper app</a>
 
 "Given a string S and a set of words D, find the longest word in D that is a subsequence of S.
 
