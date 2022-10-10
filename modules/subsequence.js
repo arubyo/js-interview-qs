@@ -17,6 +17,4 @@ let minIndex = 0;
   }
 
 
-  let first = 'hullaballoo';
-  let second = 'balloon';
-  console.log(isSubsequence(first,second));
+export default isSubsequence;

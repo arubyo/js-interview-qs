@@ -1,19 +1,29 @@
-import randomWords from 'random-words';
+import mappedString from "./modules/mapped.js";
+import isSubsequence from "./modules/subsequence.js"; 
+import longest from "./longest.js";
 
-console.log(randomWords(5));
 
-let randomStrings = randomWords(5);
-console.log(randomStrings);
+function longestMatch(string, dictionary){
 
-function longest(array) {
-    let longestWord = '';
-    for (let index = 0; index < array.length; index++) {
-        if(array[index].length > longestWord.length) {
-            longestWord = array[index];
-        }
-        
-    }
-    return longestWord; 
+let mapped = mappedString(string);
+console.log(mapped);
+let filter = []; 
+let longestWord = ''; 
+
+for (const index of dictionary) {
+    if(isSubsequence(index, mapped)){
+        filter.push(index);
+    } 
+
 }
 
-console.log(longest(randomStrings));
+longestWord = longest(filter); 
+
+return longestWord;
+
+}
+
+let word = 'javascript';
+let arr  = ['art', 'vascular', 'avast', ' javas', 'vat'];
+
+console.log(longestMatch(word, arr));
