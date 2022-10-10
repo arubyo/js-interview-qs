@@ -10,7 +10,5 @@ function findNextIndex(array, minIndex) {
     return false; 
 }
 
-let x = [3, 7];
-let y = 4; 
 
-console.log(findNextIndex(x, y));
+export default findNextIndex;
